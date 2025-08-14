@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jornal JBC - Notícias Atualizadas</title>
+  <link rel="stylesheet" href="pagina inicial.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1 class="cabecalho-titulo">JORNAL JBC</h1>
+    <p class="cabecalho-slogan">Sua fonte confiável de informação</p>
+  </header>
+
+  <main class="conteudo-principal">
+    <div class="menu-categorias">
+      <button class="botao-categoria ativo" onclick="mostrarSecao('recentes')">Recentes</button>
+      <button class="botao-categoria" onclick="mostrarSecao('jogos')">Jogos</button>
+      <button class="botao-categoria" onclick="mostrarSecao('esportes')">Esportes</button>
+      <button class="botao-categoria" onclick="mostrarSecao('criminal')">Criminal</button>
+    </div>
+
+    <!-- SEÇÃO RECENTES -->
+    <section id="recentes" class="secao-noticias ativa">
+      <article class="noticia">
+        <img src="https://s2-g1.glbimg.com/VikPbX_lmeRtmFS4j1VZbO-1ySE=/0x0:2048x1385/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/N/S/gPOca3QIKfneYxUf0wKw/cd0e6e0e-f72a-f52c-ba30-9727091335e5.jpg" 
+             alt="Mega relâmpago" class="noticia-imagem">
+        <div class="noticia-conteudo">
+          <span class="noticia-categoria">Ciência</span>
+          <h2 class="noticia-titulo">Recorde: EUA registram 'mega relâmpago' mais longo do mundo, com 829 km</h2>
+          <div class="noticia-meta">
+            <span class="noticia-autor">Por Jeff</span>
+            <span class="noticia-data">São Paulo, 30/07/2025. Atualizado há 1 hora</span>
+          </div>
+          <p class="noticia-texto">A Organização Meteorológica Mundial confirmou o novo recorde mundial de maior extensão já registrada para um raio. O fenômeno atingiu impressionantes 829 km de comprimento, equivalente à distância entre Paris e Veneza.</p>
+          <p class="noticia-destaque">Este mega relâmpago superou em 61 km o recorde anterior, estabelecido no Brasil em 2020, e foi detectado por satélites meteorológicos de última geração.</p>
+          <p class="noticia-texto">Segundo os meteorologistas, o evento ocorreu entre o Texas e Kansas City em 2017, mas só agora foi confirmado após rigorosa análise dos dados. "É um fenômeno extremamente raro que nos mostra o poder impressionante da natureza", afirmou o especialista Randall Cerveny.</p>
+          <p class="noticia-texto"><strong>Como ocorre:</strong> Enquanto raios normais duram menos de 1 segundo e têm até 16 km, este mega relâmpago se formou dentro de um sistema de nuvens gigantes que permitem descargas elétricas horizontais extremamente longas. Essas nuvens, chamadas de sistemas convectivos de mesoescala, podem se estender por centenas de quilômetros.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- SEÇÃO JOGOS -->
+    <section id="jogos" class="secao-noticias">
+      <article class="noticia">
+        <h2 class="noticia-titulo">Hideo Kojima critica falta de originalidade na indústria de games</h2>
+        <div class="noticia-meta">
+          <span class="noticia-autor">Por Carlos Silva</span>
+          <span class="noticia-data">29/07/2025. Atualizado há 3 horas</span>
+        </div>
+        <img src="https://nerdizmo.ig.com.br/wp-content/uploads/2025/06/Hideo-Kojima.jpg" 
+             alt="Hideo Kojima" class="noticia-imagem">
+        <p class="noticia-texto">Em entrevista exclusiva, o renomado criador de Metal Gear Solid e Death Stranding expressou preocupação com o estado atual da indústria. "Até o visual e sistemas são os mesmos em muitos jogos AAA", disse Kojima. "Precisamos de mais ousadia e experimentação."</p>
+        <p class="noticia-destaque">O designer japonês destacou que os grandes estúdios estão cada vez mais relutantes em correr riscos, enquanto os desenvolvedores independentes estão trazendo as inovações mais interessantes.</p>
+        <p class="noticia-texto">Questionado sobre o remake de Metal Gear Solid 3, Kojima foi enfático: "Não vou me envolver. Prefiro focar em criar novas experiências". Sobre Death Stranding 2, lançado recentemente para PS5, ele revelou: "Exploramos ainda mais os temas de conexão humana em um mundo fragmentado. Os jogadores encontrarão mecânicas inéditas que reforçam essa narrativa".</p>
+      </article>
+    </section>
+    <!-- SEÇÃO ESPORTES -->
+    <section id="esportes" class="secao-noticias">
+      <article class="noticia">
+        <img src="https://s2-ge.glbimg.com/b5VupU8GDd8JflkV_DMP0ItQnKc=/0x0:6496x4297/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/f/q/lw8vbwQjAbJOdClhmlbQ/21-1-.jpg" 
+             alt="Time de futebol em ação" class="noticia-imagem">
+        <div class="noticia-conteudo">
+          <span class="noticia-categoria">Esportes</span>
+          <h2 class="noticia-titulo">JBC 2025: Botafogo e Inter brilham no Top 5 de julho</h2>
+          <div class="noticia-meta">
+            <span class="noticia-autor">Por Renato Marques</span>
+            <span class="noticia-data">28/07/2025. Atualizado há 6 horas</span>
+          </div>
+          <p class="noticia-texto">O ranking JBC de desempenho no mês de julho trouxe surpresas agradáveis: Botafogo e Internacional conquistaram posições no Top 5, demonstrando consistência mesmo sem terem representantes na seleção do mês.</p>
+          <p class="noticia-destaque">"O que impressiona nessas equipes é a regularidade. Enquanto outros times oscilam, eles mantêm um padrão de jogo sólido", analisou o comentarista esportivo Paulo Andrade.</p>
+          <p class="noticia-texto"><strong>Melhores médias do mês:</strong></p>
+          <ul class="noticia-lista">
+            <li><strong>Cruzeiro:</strong> 75.30 (7 jogos, 6 vitórias)</li>
+            <li><strong>São Paulo:</strong> 72.28 (5 jogos, 4 vitórias)</li>
+            <li><strong>Internacional:</strong> 63.68 (6 jogos, 3 vitórias)</li>
+            <li><strong>Bahia:</strong> 62.80 (7 jogos, 4 vitórias)</li>
+            <li><strong>Botafogo:</strong> 60.45 (5 jogos, 3 vitórias)</li>
+          </ul>
+          <p class="noticia-texto">O técnico do Botafogo, em coletiva, destacou: "Estamos trabalhando para manter essa consistência. O time entendeu a importância de cada ponto". Já no Inter, a volta de jogadores lesionados promete fortalecer ainda mais o elenco para a sequência do campeonato.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- SEÇÃO CRIMINAL -->
+    <section id="criminal" class="secao-noticias">
+      <article class="noticia">
+        <img src="https://via.placeholder.com/800x450?text=Opera%C3%A7%C3%A3o+Policial" 
+             alt="Operação policial em andamento" class="noticia-imagem">
+        <div class="noticia-conteudo">
+          <span class="noticia-categoria">Criminal</span>
+          <h2 class="noticia-titulo">Operação 'Contrato Limpo' desarticula esquema de R$ 25 milhões</h2>
+          <div class="noticia-meta">
+            <span class="noticia-autor">Por Ana Beatriz</span>
+            <span class="noticia-data">27/07/2025. Atualizado ontem</span>
+          </div>
+          <p class="noticia-texto">Uma grande operação do Ministério Público em conjunto com a Polícia Civil resultou na desarticulação de um esquema de corrupção que desviou recursos públicos na prefeitura de Cidade Alta. Foram cumpridos 12 mandados de busca e apreensão e 5 prisões temporárias.</p>
+          <p class="noticia-destaque">As investigações, que duraram oito meses, revelaram superfaturamento em obras públicas e desvio de verbas da saúde, com prejuízo estimado em R$ 25 milhões aos cofres públicos.</p>
+          <p class="noticia-texto"><strong>Principais envolvidos:</strong></p>
+          <ul class="noticia-lista">
+            <li>Carlos Alberto Gomes (ex-secretário municipal de Obras)</li>
+            <li>Marcos Vinícius Silva (empreiteiro principal)</li>
+            <li>Dra. Fernanda Lima (ex-diretora de Saúde)</li>
+          </ul>
+          <p class="noticia-texto">De acordo com o delegado responsável, o esquema utilizava empresas fantasmas para lavagem de dinheiro e funcionava há pelo menos três anos. "Identificamos pagamentos por serviços não prestados e obras superfaturadas em até 300%", revelou.</p>
+          <p class="noticia-texto">O prefeito em exercício afirmou que a administração municipal está colaborando com as investigações e que medidas serão tomadas para recuperar os recursos desviados.</p>
+        </div>
+      </article>
+    </section>
+    <!-- Outras seções seguem o mesmo padrão -->
+  </main>
+
+  <footer class="rodape">
+    <p>© 2025 Jornal JBC - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="pagina inicial.js"></script>
+</body>
+</html>
