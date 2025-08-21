@@ -1,75 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="igreja.css">
-    <link rel="shortcut icon" href="icone/Iconarchive-Essential-Buildings-Church.16.png" type="image/x-icon">
-    <title>igreja santo antonio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icone/Iconarchive-Essential-Buildings-Church.16.png" type="image/x-icon">
+  <link rel="stylesheet" href="igreja.css">
+  <title>Igreja Santo Antônio</title>
 </head>
 <body>
-     <main class="conteudo-principal">
-    <div class="menu">
-   <button onclick="mostrarsecao('inicio')">início</button>
-    <button onclick="mostrarsecao('historia')">sobre nós</button>
-    <button onclick="mostrarsecao('destaque')">destques</button>
-    <button onclick="mostrarsecao('eventos')">eventos</button>
-    <button onclick="mostrarsecao('contato')">contatos</button>
-    
+    <main>
+  <!-- HEADER -->
+  <header class="topo">
+    <div class="logo">
+      <img src="img/igreja.jpg" alt="Logo Paróquia" width="50">
+      <h1>Paróquia Santo Antônio</h1>
     </div>
-    <div>
-        <section id="inicio" class="secao ativa">
-            <h1>Bem-vindo à Paróquia Santo Antônio</h1>
-            <p>venha nos conhecer.</p>
-            <img src="img/igreja.jpg" alt="Igreja">
-            <div class="opcao">
-                <button onclick="mostrarsecao('recentes')">recentes</button>
-                <button onclick="mostrarsecao('ultimas')">ultimas</button>
-                <button onclick="mostrarsecao('infomativo')">informativo</button>
-                <div id="subtopico">
-                    <div>
-                        <div class="subtopico-noticia">
-    <img src="img/g_Cap_Sta_M_Goretti-NSS-RC-19.jpg" alt="Evento 1" width="100">
-    <img src="img/dino-reichmuth-kk3W5-0b6e0-unsplash.jpg" alt="Evento 2" width="100">
-    <img src="img/garrett-parker-DlkF4-dbCOU-unsplash.jpg" alt="Evento 3" width="100">
-    <p><strong>Festa de Santo Antônio</strong> <br> 12/06/2025 <br> Celebração especial com música e oração. <a href="#">Saiba mais</a></p>
-</div>
+    <nav class="menu">
+      <button data-alvo="inicio">Início</button>
+      <button data-alvo="sobre">Sobre Nós</button>
+      <button data-alvo="destaques">Destaques</button>
+      <button data-alvo="eventos">Eventos</button>
+      <button data-alvo="galeria">Galeria</button>
+      <button data-alvo="depoimentos">Depoimentos</button>
+      <button data-alvo="contatos">Contatos</button>
+    </nav>
+  </header>
 
-                    </div>
-                </div>
-            </div>
-         
-        </section>
+<section id="inicio" class="secao ativa">
+  <div class="inicio-container">
+    <div class="hero">
+      <h2>Bem-vindo à Paróquia Santo Antônio</h2>
+      <p>Um espaço de fé, acolhimento e união da comunidade.</p>
+      <img src="img/g_Cap_Sta_M_Goretti-NSS-RC-19.jpg" alt="Igreja" class="img-hero">
     </div>
-    <img src="https://diocesedepiracicaba.org.br/img/paroquias/g_Cap_Sta_M_Goretti-NSS-RC-19.jpg" alt="paroquia santo antonio" width="500" height="auto">
-    <h1>bem-vindo a paróquia santo eutanio</h1>
-<div class="secao-historia" id="historia">
-    <h2><strong>quem nós somos</strong></h2>
-    <p>A Igreja Matriz de Santo Antônio, em Rio Claro, tem uma história rica que remonta à década de 1930, quando a antiga capela foi demolida para dar lugar à construção da nova
-         matriz. Antes, o atendimento religioso era realizado por padres da Paróquia São José Operário e, posteriormente, pelas irmãs franciscanas.
-         A construção da atual Igreja Matriz, com seu presbitério e cobertura, foi um processo gradual, contando com a participação de diversos padres e a contribuição da comunidade local.
-         A igreja também possui uma Sede Social Católica, onde funcionou um cinema por muitos anos.
-        </p>
-         <h2>
-            <strong>nossa missão</strong>
-         </h2>
-         <p>em como missão principal a evangelização e a assistência espiritual aos fiéis da comunidade, seguindo o 
-            exemplo de Santo Antônio, conhecido por sua pregação e dedicação aos
-            mais necessitados. A paróquia promove atividades como missas, celebrações, catequese e ações sociais, buscando fortalecer a fé e promover a união entre os membros da comunidade.
-         </p>
+
+    <div class="historia">
+      <h3>Nossa História</h3>
+      <p>
+        A Paróquia Santo Antônio foi fundada há mais de cinquenta anos, tornando-se um marco de fé e tradição em nossa cidade. Desde o início, buscamos reunir famílias, celebrar a espiritualidade e promover ações que transformam vidas.
+        <br><br>
+        <a href="sobre" class="link-sobre">Saiba mais sobre nossa história.</a>
+      </p>
     </div>
-    <h2>linha do tempo</h2>
-    
-<h2>linha do tempo</h2>
-<ul>
-    <li><strong>1930:</strong> Demolição da antiga capela para construção da nova matriz.</li>
-    <li><strong>Década de 1930:</strong> Atendimento religioso realizado por padres da Paróquia São José Operário e irmãs franciscanas.</li>
-    <li><strong>Décadas seguintes:</strong> Construção gradual da Igreja Matriz, com participação da comunidade e diversos padres.</li>
-    <li><strong>Funcionamento do cinema:</strong> Sede Social Católica abriga um cinema por muitos anos.</li>
-    <li><strong>Atualidade:</strong> Igreja Matriz realiza missas, celebrações, catequese e ações sociais, promovendo a fé e união da comunidade.</li>
-</ul>
-</div>
+
+    <div class="valores">
+      <h3>Nossos Valores</h3>
+      <ul>
+        <li><strong>Fé:</strong> Celebramos a espiritualidade e o crescimento pessoal.</li>
+        <li><strong>Solidariedade:</strong> Realizamos campanhas e projetos sociais para ajudar quem mais precisa.</li>
+        <li><strong>Comunidade:</strong> Promovemos encontros, eventos e atividades que unem pessoas de todas as idades.</li>
+      </ul>
+    </div>
+
+    <div class="convite">
+      <h3>Participe!</h3>
+      <p>
+        Venha fazer parte da nossa comunidade! Acompanhe nossos eventos, participe dos grupos de oração e envolva-se nas ações sociais. Juntos, construímos uma paróquia mais forte e acolhedora.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE NÓS -->
+<section id="sobre" class="secao">
+  <h2>Sobre Nós</h2>
+  <div class="sobre-container">
+    <img src="img/g_Cap_Sta_M_Goretti-NSS-RC-19.jpg" alt="Comunidade" width="500">
+    <p>
+      Fundada há mais de cinquenta anos, a Paróquia Santo Antônio nasceu do desejo de reunir famílias e fortalecer a fé cristã em nossa região. Desde então, tornou-se referência em acolhimento, solidariedade e espiritualidade, acompanhando gerações e celebrando momentos marcantes da vida de seus paroquianos.
+      <br><br>
+      Ao longo de sua história, a paróquia promoveu missas, batizados, casamentos e eventos que unem a comunidade, além de campanhas solidárias e projetos sociais que ajudam quem mais precisa. O trabalho voluntário dos membros é fundamental para manter viva a missão de servir ao próximo e espalhar esperança.
+      <br><br>
+      Hoje, a Paróquia Santo Antônio é um espaço de encontro, diálogo e crescimento espiritual. Aqui, cada pessoa é convidada a participar, compartilhar experiências e construir uma comunidade mais justa e fraterna. Venha conhecer nossa história e fazer parte dessa família!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id nostrum aspernatur dolorem enim reprehenderit blanditiis rerum similique quisquam. Explicabo porro nostrum alias non exercitationem, eveniet natus incidunt error aperiam?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates ipsa, ipsum sapiente delectus minus explicabo modi beatae distinctio culpa, ex nihil inventore eius, esse repudiandae eos ullam voluptate voluptas?
+
+    <!-- DESTAQUES -->
+    <section id="destaques" class="secao">
+      <h2>Destaques</h2>
+      <p>Momentos especiais vividos pela nossa comunidade.</p>
+      <div class="cards">
+        <div>
+          <img src="img/casamento.jpg" alt="Casamento">
+          <p><strong>Casamento Comunitário</strong><br>Unindo famílias em celebração do amor.</p>
+        </div>
+        <div>
+          <img src="img/campanha.jpg" alt="Campanha Solidária">
+          <p><strong>Campanha do Agasalho</strong><br>Ajudando os mais necessitados.</p>
+        </div>
+        <div>
+          <img src="img/coral.jpg" alt="Coral">
+          <p><strong>Coral Jovem</strong><br>Encontros de música e espiritualidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section id="eventos" class="secao">
+      <h2>Próximos Eventos</h2>
+      <div class="cards">
+        <div>
+          <img src="img/missa.jpg" alt="Missa">
+          <p><strong>Missa Campal</strong><br>05/07/2025<br>Celebração ao ar livre.</p>
+        </div>
+        <div>
+          <img src="img/retreat.jpg" alt="Retiro">
+          <p><strong>Retiro Espiritual</strong><br>18/07/2025<br>Um fim de semana de reflexão.</p>
+        </div>
+        <div>
+          <img src="img/feira.jpg" alt="Feira">
+          <p><strong>Feira Solidária</strong><br>25/07/2025<br>Arrecadação de alimentos e roupas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="secao">
+      <h2>Galeria</h2>
+      <div class="galeria">
+        <img src="img/foto1.jpg" alt="Foto 1">
+        <img src="img/foto2.jpg" alt="Foto 2">
+        <img src="img/foto3.jpg" alt="Foto 3">
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="secao">
+      <h2>Depoimentos</h2>
+      <div class="cards">
+        <div>
+          <p>“A paróquia me acolheu em um momento difícil e hoje sou grato por fazer parte desta comunidade.”<br><br><strong>- Maria</strong></p>
+        </div>
+        <div>
+          <p>“Aqui encontrei fé, amigos e uma nova família.”<br><br><strong>- João</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATOS -->
+    <section id="contatos" class="secao">
+      <h2>Entre em Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="enviar">Enviar</button>
+      </form>
+    </section>
+ 
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2025 Paróquia Santo Antônio | Todos os direitos reservados</p>
+  </footer>
 </main>
-
+  <script src="igreja.js"></script>
 </body>
 </html>
