@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reviva os desenhos animados da sua infância com imagens, vídeos e curiosidades nostálgicas!">
-    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicionando favicon (ícone na aba) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📺</text></svg>">
     <title>Nostalgia Animada</title>
 </head>
 <body>
@@ -19,33 +21,33 @@
 </header>
 
 <div class="cards">
-    <div class="card_1">
-        <img src="img/avatar.jpg" alt="Imagem do desenho Avatar: A Lenda de Aang" class="img-avatar-posicao">
-        <p><strong>Avatar</strong></p>
+    <div class="card card_1">
+        <img src="/aula 4/atividade avaliativa/img/avatar.jpg" alt="Imagem do desenho Avatar: A Lenda de Aang" class="img-avatar-posicao">
+        <p><strong>Avatar</strong> <span>(2005)</span></p>
         <p>Avatar: A Lenda de Aang é uma série animada que acompanha Aang, o último dobrador de ar e Avatar, responsável por manter o equilíbrio entre os quatro elementos...</p>
     </div>
 
-    <div class="card_2">
-        <img src="img/du-dudu-e-edu.webp" alt="Imagem do desenho Du, Dudu e Edu">
-        <p><strong>Du, Dudu e Edu</strong></p>
+    <div class="card card_2">
+        <img src="/aula 4/atividade avaliativa/img/du-dudu-e-edu.webp" alt="Imagem do desenho Du, Dudu e Edu">
+        <p><strong>Du, Dudu e Edu</strong> <span>(1999)</span></p>
         <p>Desenho animado que acompanha três amigos atrapalhados em suas tentativas de conseguir doces e se divertir no bairro onde moram...</p>
     </div>
 
-    <div class="card_3">
-        <img src="img/as-aventuras-de-jackie-chan_cke.webp" alt="Imagem do desenho As Aventuras de Jackie Chan">
-        <p><strong>As Aventuras de Jackie Chan</strong></p>
+    <div class="card card_3">
+        <img src="/aula 4/atividade avaliativa/img/as-aventuras-de-jackie-chan_cke.webp" alt="Imagem do desenho As Aventuras de Jackie Chan">
+        <p><strong>As Aventuras de Jackie Chan</strong> <span>(2000)</span></p>
         <p>Desenho animado com Jackie Chan e sua família em missões para encontrar artefatos mágicos e combater vilões...</p>
     </div>
 
-    <div class="card_4">
-        <img src="img/ddd5532808_fosters_fc.jpg" alt="Imagem do desenho A Mansão Foster para Amigos Imaginários">
-        <p><strong>Foster's</strong></p>
+    <div class="card card_4">
+        <img src="/aula 4/atividade avaliativa/img/ddd5532808_fosters_fc.jpg" alt="Imagem do desenho A Mansão Foster para Amigos Imaginários">
+        <p><strong>Foster's</strong> <span>(2004)</span></p>
         <p>Animação sobre uma mansão onde amigos imaginários vivem após as crianças crescerem. A série aborda amizade e criatividade...</p>
     </div>
 
-    <div class="card_5">
-        <img src="img/frekazoid_cke.webp" alt="Imagem do desenho Freakazoid">
-        <p><strong>Freakazoid</strong></p>
+    <div class="card card_5">
+        <img src="/aula 4/atividade avaliativa/img/frekazoid_cke.webp" alt="Imagem do desenho Freakazoid">
+        <p><strong>Freakazoid</strong> <span>(1995)</span></p>
         <p>Desenho animado de comédia e ação com Dexter Douglas, um nerd que se transforma em Freakazoid após um acidente no computador...</p>
     </div>
 </div>
@@ -53,8 +55,40 @@
 <div class="video">
     <p>Quer saber mais sobre os desenhos animados que marcaram época? Assista ao vídeo abaixo e mergulhe ainda mais no universo nostálgico dos clássicos da infância!</p>
     <h1>Mais desenhos nostálgicos</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=MFL3horl8vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Corrigindo o embed do vídeo -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MFL3horl8vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 </div>
+
+<!-- Nova seção de áudio -->
+<section class="audio-section">
+    <h2>Trilhas Sonoras Memoráveis</h2>
+    <div class="audio-container">
+        <div class="audio-item">
+            <h3>Caverna do Dragão - Abertura</h3>
+            <audio controls>
+                <source src="/aula 4/atividade avaliativa/audio/CavernadoDragao(Tema)_www.toquesengracadosmp3.com.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+        <div class="audio-item">
+            <h3>ThunderCats - Abertura</h3>
+            <audio controls>
+                <source src="/aula 4/atividade avaliativa/audio/Thundercats Opening Theme.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+        <div class="audio-item">
+            <h3>He-Man - Abertura</h3>
+            <audio controls>
+                <source src="/aula 4/atividade avaliativa/audio/8d82b5_He-Man_Theme_Song.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+    </div>
+</section>
+
 <section class="tabela-recomendacoes">
   <h2>Recomendações Nostálgicas</h2>
   <p>Confira nossa lista de desenhos animados recomendados que marcaram época!</p>
@@ -92,7 +126,7 @@
         <td>YouTube / Amazon</td>
       </tr>
       <tr>
-        <td>Foster’s: A Mansão dos Amigos Imaginários</td>
+        <td>Foster's: A Mansão dos Amigos Imaginários</td>
         <td>Comédia / Fantasia</td>
         <td>2004</td>
         <td>8.4</td>
@@ -108,7 +142,6 @@
     </tbody>
   </table>
 </section>
-</div>
 
 <!-- Rodapé -->
 <footer class="rodape">
@@ -117,5 +150,6 @@
     <p><a href="mailto:contato@nostalgiaanimada.com">contato@nostalgiaanimada.com</a></p>
 </footer>
 
+<script src="script.cjs"></script>
 </body>
 </html>
