@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine 2025: Moda, Essência e Estilo em Alta Definição</title>
+    <link rel="stylesheet" href="moda.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Vitrine 2025</h1>
+                <p>Moda, Essência e Estilo em Alta Definição</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="cart-btn" id="cartButton">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Bem-vindo à experiência de compra do futuro</h2>
+                    <p>Descubra produtos exclusivos que combinam inovação, estilo e sofisticação em um só lugar.</p>
+                    <button class="cta-button">Explorar Coleção</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categorias">
+            <div class="container">
+                <h2>Categorias em Destaque</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Roupas</h3>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h3>Perfumes</h3>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3>Bolsas</h3>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Acessórios</h3>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-guitar"></i>
+                        </div>
+                        <h3>Instrumentos</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="produtos">
+            <div class="container">
+                <h2>Produtos em Destaque</h2>
+                <div class="product-carousel" id="productCarousel">
+                    <!-- Produtos serão inseridos via JavaScript -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-prev" id="carouselPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-next" id="carouselNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Conteúdo sobre a empresa...</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Informações de contato...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vitrine 2025</h3>
+                    <p>Moda, Essência e Estilo em Alta Definição</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#">Termos de serviço</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Trocas e devoluções</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#categorias">Roupas</a></li>
+                        <li><a href="#categorias">Perfumes</a></li>
+                        <li><a href="#categorias">Bolsas</a></li>
+                        <li><a href="#categorias">Acessórios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Inscreva-se para receber novidades e promoções</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vitrine 2025. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carrinho de Compras -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Seu Carrinho</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho serão inseridos via JavaScript -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cartTotal">R$ 0,00</span></p>
+                <button class="checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="moda.js"></script>
+</body>
