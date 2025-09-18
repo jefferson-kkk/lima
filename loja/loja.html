@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Marcas - Loja de Luxo</title>
+    <link rel="stylesheet" href="loja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Jeff Marcas</h1>
+        <p>Seja bem-vindo à loja Jeff Marcas, uma loja focada em produtos de luxo</p>
+        <div class="carrinho-icon" onclick="mostrarSecao('carrinho')">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="contador-carrinho">0</span>
+        </div>
+    </header>
+    
+    <section class="grupo-1">
+        <div class="banner">
+            <img src="img/banner loja de luxo.jpg" width="auto" height="auto" alt="Banner da loja Jeff Marcas">
+        </div>
+        
+        <div class="botoes" id="botoes">
+            <button onclick="mostrarSecao('inicio')">Início</button>
+            <button onclick="mostrarSecao('produtos')">Produtos</button>
+            <button onclick="mostrarSecao('sobre')">Sobre</button>
+            <button onclick="mostrarSecao('contato')">Contato</button>   
+            
+            <form action="/pesquisa" method="get" class="search-form">
+                <input type="search" name="q" placeholder="Digite sua pesquisa...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </section> 
+    
+    <!-- Seção INÍCIO (ativa por padrão) -->
+    <section id="inicio" class="secao ativa">
+        <h2 class="titulo-secao">Categorias em Destaque</h2>
+        
+        <div class="categorias-container">
+            <div class="categoria">
+                <h3>Infantil</h3>
+                <img src="img/menina.jpg" width="400" height="600" alt="Moda infantil de luxo">
+                <p>Roupas infantis de luxo</p>
+                <button onclick="mostrarSecao('infantil')">Acessar</button>
+            </div>
+            
+            <div class="categoria">
+                <h3>Masculino</h3>
+                <img src="img/bege masculina.jpg" width="200" height="300" alt="Moda masculina de luxo">
+                <p>Roupas masculinas edição ilimitada</p>
+                <button onclick="mostrarSecao('masculino')">Acessar</button>
+            </div>
+            
+            <div class="categoria">
+                <h3>Feminino</h3>
+                <img src="img/bege feminina.jpg" width="200" height="300" alt="Moda feminina de luxo">
+                <p>Roupas femininas de luxo</p>
+                <button onclick="mostrarSecao('feminino')">Acessar</button>
+            </div>
+        </div>
+        
+        <h2 class="titulo-secao">Ofertas Especiais</h2>
+        
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Colar de Diamante</h3>
+                <img src="img/colar.webp" width="250" height="200" alt="Colar de diamante">
+                <p>Colar de diamante exclusivo</p>
+                <p class="preco">R$ 5.000,00</p>
+                <button onclick="adicionarAoCarrinho('Colar de Diamante', 5000, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="produto">
+                <h3>Salto Alto</h3>
+                <img src="img/salto.jpeg" width="250" height="200" alt="Salto alto">
+                <p>Salto cravejado de joias</p>
+                <p class="preco">R$ 3.000,00</p>
+                <button onclick="adicionarAoCarrinho('Salto Alto', 3000, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="produto">
+                <h3>Relógio Clássico</h3>
+                <img src="img/relogio.webp" width="250" height="200" alt="Relógio clássico">
+                <p>Relógio clássico de luxo</p>
+                <p class="preco">R$ 4.150,00</p>
+                <button onclick="adicionarAoCarrinho('Relógio Clássico', 4150, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção PRODUTOS (oculta inicialmente) -->
+    <section id="produtos" class="secao">
+        <h2 class="titulo-secao">Todos os Produtos</h2>
+        
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Vestido Le Lies Antonieta</h3>
+                <img src="img/le lis antonieta.webp" width="250" height="200" alt="Vestido de luxo">
+                <p>Vestido exclusivo da coleção Antonieta</p>
+                <p class="preco">R$ 5.100,00</p>
+                <button onclick="adicionarAoCarrinho('Vestido Le Lies Antonieta', 5100, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="produto">
+                <h3>Vestido Bege com Correntes</h3>
+                <img src="img/vestido.webp" width="250" height="200" alt="Vestido bege com correntes">
+                <p>Vestido elegante com detalhes em corrente</p>
+                <p class="preco">R$ 2.150,00</p>
+                <button onclick="adicionarAoCarrinho('Vestido Bege com Correntes', 2150, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="produto">
+                <h3>Conjunto Masculino Premium</h3>
+                <img src="img/conjunto.jpg" width="250" height="200" alt="Conjunto masculino">
+                <p>Conjunto masculino em tecido de alta qualidade</p>
+                <p class="preco">R$ 2.800,00</p>
+                <button onclick="adicionarAoCarrinho('Conjunto Masculino Premium', 2800, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="produto">
+                <h3>Vestido Infantil Exclusive</h3>
+                <img src="img/vestido infantil.webp" width="250" height="200" alt="Vestido infantil">
+                <p>Vestido infantil para ocasiões especiais</p>
+                <p class="preco">R$ 1.200,00</p>
+                <button onclick="adicionarAoCarrinho('Vestido Infantil Exclusive', 1200, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção SOBRE (oculta inicialmente) -->
+    <section id="sobre" class="secao">
+        <h2 class="titulo-secao">Sobre a Jeff Marcas</h2>
+        <div class="sobre-container">
+            <div class="sobre-texto">
+                <h3>Nossa História</h3>
+                <p>Fundada em 2010, a Jeff Marcas nasceu da paixão por moda de luxo e elegância. Começamos como uma pequena boutique e hoje somos referência em produtos de alta qualidade para clientes que buscam sofisticação e exclusividade.</p>
+                
+                <h3>Nossa Missão</h3>
+                <p>Oferecer produtos de alta qualidade que combinam estilo, conforto e sofisticação, proporcionando uma experiência de compra exclusiva para nossos clientes.</p>
+                
+                <h3>Valores</h3>
+                <ul>
+                    <li>Qualidade superior em todos os produtos</li>
+                    <li>Compromisso com a sustentabilidade</li>
+                    <li>Inovação constante em design e materiais</li>
+                    <li>Atendimento personalizado e exclusivo</li>
+                </ul>
+            </div>
+            <div class="sobre-imagem">
+                <img src="https://via.placeholder.com/400x300" alt="Nossa loja física">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CONTATO (oculta inicialmente) -->
+    <section id="contato" class="secao">
+        <h2 class="titulo-secao">Entre em Contato</h2>
+        <div class="contato-container">
+            <div class="contato-info">
+                <h3>Informações de Contato</h3>
+                <p><strong>Endereço:</strong> Av. Paulista, 1000, São Paulo - SP</p>
+                <p><strong>Telefone:</strong> (11) 3000-5000</p>
+                <p><strong>Email:</strong> contato@jeffmarcas.com.br</p>
+                <p><strong>Horário de Funcionamento:</strong><br>Segunda a Sábado, 10h às 20h</p>
+                
+                <h3>Nossas Redes Sociais</h3>
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="contato-formulario">
+                <h3>Envie uma Mensagem</h3>
+                <form id="form-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CARRINHO (oculta inicialmente) -->
+    <section id="carrinho" class="secao">
+        <h2 class="titulo-secao">Seu Carrinho de Compras</h2>
+        <div id="carrinho-vazio" class="carrinho-vazio">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Seu carrinho está vazio</p>
+        </div>
+        <div id="carrinho-itens" class="carrinho-itens"></div>
+        <div id="carrinho-total" class="carrinho-total">
+            <h3>Total: R$ <span id="total-valor">0,00</span></h3>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <!-- Seções para categorias específicas -->
+    <section id="infantil" class="secao">
+        <h2 class="titulo-secao">Moda Infantil</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Vestido Infantil Exclusive</h3>
+                <img src="img/vestido infantil.webp" width="250" height="200" alt="Vestido infantil">
+                <p>Vestido infantil para ocasiões especiais</p>
+                <p class="preco">R$ 1.200,00</p>
+                <button onclick="adicionarAoCarrinho('Vestido Infantil Exclusive', 1200, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <button class="btn-voltar" onclick="mostrarSecao('inicio')">Voltar ao Início</button>
+    </section>
+
+    <section id="masculino" class="secao">
+        <h2 class="titulo-secao">Moda Masculina</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Conjunto Masculino Premium</h3>
+                <img src="img/conjunto.jpg" width="250" height="200" alt="Conjunto masculino">
+                <p>Conjunto masculino em tecido de alta qualidade</p>
+                <p class="preco">R$ 2.800,00</p>
+                <button onclick="adicionarAoCarrinho('Conjunto Masculino Premium', 2800, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <button class="btn-voltar" onclick="mostrarSecao('inicio')">Voltar ao Início</button>
+    </section>
+
+    <section id="feminino" class="secao">
+        <h2 class="titulo-secao">Moda Feminina</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Vestido Le Lies Antonieta</h3>
+                <img src="img/le lis antonieta.webp" width="250" height="200" alt="Vestido de luxo">
+                <p>Vestido exclusivo da coleção Antonieta</p>
+                <p class="preco">R$ 5.100,00</p>
+                <button onclick="adicionarAoCarrinho('Vestido Le Lies Antonieta', 5100, 'https://via.placeholder.com/250x200')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <button class="btn-voltar" onclick="mostrarSecao('inicio')">Voltar ao Início</button>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-content">
+                <div class="rodape-info">
+                    <h3>Jeff Marcas</h3>
+                    <p>Promovendo elegância e conforto a todos.</p>
+                </div>
+                
+                <div class="rodape-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#" onclick="mostrarSecao('inicio'); return false;">Início</a></li>
+                        <li><a href="#" onclick="mostrarSecao('produtos'); return false;">Produtos</a></li>
+                        <li><a href="#" onclick="mostrarSecao('sobre'); return false;">Sobre</a></li>
+                        <li><a href="#" onclick="mostrarSecao('contato'); return false;">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="rodape-contato">
+                    <h4>Contato</h4>
+                    <p>email@jeffmarcas.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rodape-copyright">
+                <p>&copy; 2023 Jeff Marcas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="loja.js"></script>
+</body>
+</html>

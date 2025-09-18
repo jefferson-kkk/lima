@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>jeff marcas</h1>
+        <p>seja bem vindo a loja jeff marcas uma loja focada em produtos de luxo</p>
+    </header>
+    <section class="grupo-1">
+        <div class="banner">
+            <img src="/aula 6/formativa/img/banner loja de luxo.jpg" alt="banner-loja">
+
+        </div>
+    <div class="botoes" id="botoes">
+        <button onclick="mostrarsecao('inicio')">inicio</button>
+        <button onclick ="mostrarsecao('produtos')">produtos</button>
+        <button onclick="mostrarsecao('sobre')">sobre</button>
+        <button onclick="mostrarsecao('contato')">contato</button>   
+        <form action="/pesquisa" method="get">
+        <input type="search" name="q" placeholder="Digite sua pesquisa...">
+        <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+    </section> 
+    <section class="grupo-2">
+        <div class="inicio">
+            <div class="categoria">
+               <h3>infantil</h3>
+                <img src="img/infantil.jpg" alt="infantil-imagem-moda">
+               <p>roupas infantis de luxo</p>
+               <button onclick="mostrarsecao('infantil')">acessar</button>
+               <div class="masculino">
+                <h3>masculino</h3>
+                <img src="img/design masculino moda bege.jpg" alt="masculino-bege">
+                <p>roupas masculinas edição ilimitada</p>
+                <button onclick="mostrarsecao('masculino')">acessar</button>
+               </div>
+               <div class="feminino">
+                <h3>feminino
+                <img src="/img/wingsuit-roupa-clean.jpg.webp" alt="">
+                <p>roupas femininas de luxo</p>
+                <button onclick="mostarsecao('feminino')">acessar</button>
+            </div>
+            <div class="'acessorio-1">
+                <h3>ofertas</h3>
+                <img src="img/ofertas/colares.jpg" alt="colares">
+                <p>colar de diamante</p>
+                <p>preço R$:5000,00</p>
+                <button onclick="mostrarsecao('colar')">acessar</button>
+            </div>
+            <div class="'acessorio-2">
+                <h3>ofertas</h3>
+                <img src="img/ofertas/salto.jpg" alt="salto">
+                <p>colar cravejado de joias</p>
+                <p>preço R$:3000,00</p>
+                <button onclick="mostrarsecao('salto')">acessar</button>
+            </div>       
+              <div class="'acessorio-3">
+                <h3>ofertas</h3>
+                <img src="img/ofertas/anel masculino.webp" alt="anel">
+                <p>relogio classico</p>
+                <p>preço R$:4150,00</p>
+                <button onclick="mostrarsecao('anel')">acessar</button>
+            </div>
+            
+              <!-- Rodapé -->
+            <footer class="rodape">
+            <div class="container">
+            <div class="rodape-content">
+                <div class="rodape-info">
+                <h3>jeff-marcas</h3>
+                <p>promovendo elgância e conforto a todos.</p>
+                </div>
+                <div class="rodape-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Sobre o Projeto</a></li>
+                    <li><a href="#produtos">Componentes</a></li>
+                    <li><a href="#sobre">Funcionamento</a></li>
+                    <li><a href="#contato">Colaboradores</a></li>
+                </ul>
+                </div>
+                <div class="rodape-contato">
+                <h4>Contato</h4>
+                <p>email@modas.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="rodape-copyright">
+                <p>&copy; 2023 Jeff Marcas. Todos os direitos reservados.</p>
+            </div>
+            </div>
+        </footer>
+</section>
+
+<section class="produtos">
+    <h1>promoções</h1>
+    </div>       
+    <div class="produto-1">
+    <h3>ofertas</h3>
+    <img src="img/produtos/vestidos.webp" alt="vestido">
+    <p>vestido le lies antonieta</p>
+    <p>preço R$:5100,00</p>
+    <button class="carrinho" id="carrinho">
+    <i class="fas fa-times">adicionar</i>
+    </button>
+</section>
+</body>
+</html> 

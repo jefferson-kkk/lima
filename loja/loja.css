@@ -1,0 +1,702 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #2c3e50;
+    --secondary: #e67e22;
+    --accent: #3498db;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --success: #27ae60;
+    --danger: #e74c3c;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a1a1a 100%);
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.cabecalho h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.cabecalho p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.carrinho-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: var(--secondary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.carrinho-icon:hover {
+    transform: scale(1.1);
+}
+
+#contador-carrinho {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--danger);
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Navegação */
+.grupo-1 {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.botoes button {
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.botoes button:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.search-form {
+    display: flex;
+    margin-left: 20px;
+}
+
+.search-form input {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    width: 250px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-form input:focus {
+    border-color: var(--accent);
+}
+
+.search-form button {
+    padding: 12px 15px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: var(--accent);
+}
+
+/* Seções */
+.secao {
+    display: none;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secao.ativa {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+/* Categorias */
+.categorias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.categoria {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.categoria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.categoria h3 {
+    color: var(--primary);
+    margin: 10px 0;
+}
+
+.categoria button {
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.categoria button:hover {
+    background: var(--accent);
+}
+
+/* Produtos */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.produto {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.produto h3 {
+    color: var(--primary);
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.produto p {
+    margin: 5px 0;
+    flex-grow: 1;
+}
+
+.preco {
+    font-weight: bold;
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.produto button {
+    padding: 12px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.produto button:hover {
+    background: var(--accent);
+}
+
+/* Sobre */
+.sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-texto h3 {
+    color: var(--primary);
+    margin: 20px 0 10px;
+}
+
+.sobre-texto ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto li {
+    margin-bottom: 8px;
+}
+
+.sobre-imagem {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contato */
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contato-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contato-info h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.contato-info p {
+    margin-bottom: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.redes-sociais a:hover {
+    background: var(--accent);
+}
+
+.contato-formulario {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contato-formulario h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contato-formulario button {
+    padding: 12px 25px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.contato-formulario button:hover {
+    background: var(--accent);
+}
+
+/* Carrinho */
+.carrinho-vazio {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+}
+
+.carrinho-vazio i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.carrinho-itens {
+    margin-bottom: 30px;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.item-carrinho img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-info h4 {
+    margin: 0 0 5px;
+    color: var(--primary);
+}
+
+.item-info p {
+    margin: 0;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.controles-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.controles-item button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.controles-item button:hover {
+    background: var(--accent);
+}
+
+.controles-item span {
+    font-weight: 600;
+}
+
+.remover-item {
+    background: var(--danger) !important;
+    margin-left: 15px;
+}
+
+.remover-item:hover {
+    background: #c0392b !important;
+}
+
+.carrinho-total {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.carrinho-total h3 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.carrinho-total button {
+    padding: 12px 25px;
+    background: var(--success);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.carrinho-total button:hover {
+    background: #219653;
+}
+
+.btn-voltar {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-voltar:hover {
+    background: var(--accent);
+}
+
+/* Rodapé */
+.rodape {
+    background: var(--dark);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.rodape-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.rodape-info,
+.rodape-links,
+.rodape-contato {
+    flex: 1;
+    min-width: 250px;
+}
+
+.rodape-info h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.rodape-links h4,
+.rodape-contato h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.rodape-links ul {
+    list-style: none;
+}
+
+.rodape-links li {
+    margin-bottom: 10px;
+}
+
+.rodape-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape-links a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--secondary);
+}
+
+.rodape-copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+    
+    .carrinho-icon {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .botoes {
+        flex-direction: column;
+    }
+    
+    .search-form {
+        margin: 15px 0 0 0;
+        width: 100%;
+    }
+    
+    .search-form input {
+        width: 100%;
+    }
+    
+    .categorias-container,
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sobre-container,
+    .contato-container {
+        flex-direction: column;
+    }
+    
+    .rodape-content {
+        flex-direction: column;
+    }
+}
