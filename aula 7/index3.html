@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signin Template · Bootstrap v5.3</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: var(--bs-body-bg);
+    }
+    .form-signin {
+      max-width: 330px;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body class="d-flex align-items-center bg-body-tertiary">
+
+  <!-- Toggle de Tema -->
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme">
+      <svg class="bi my-1 theme-icon-active" aria-hidden="true" width="16" height="16"><use href="#sun-fill"></use></svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li><button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light">Light</button></li>
+      <li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">Dark</button></li>
+      <li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">Auto</button></li>
+    </ul>
+  </div>
+
+  <!-- Formulário de Login -->
+  <main class="form-signin w-100 m-auto text-center">
+    <form>
+      <img class="mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+      <div class="form-floating mb-2">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="form-check text-start mb-3">
+        <input class="form-check-input" type="checkbox" value="remember-me" id="checkDefault">
+        <label class="form-check-label" for="checkDefault">Remember me</label>
+      </div>
+
+      <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">© 2017–2025</p>
+    </form>
+  </main>
+
+  <!-- Ícones SVG do toggle -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+      <path d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8z"/>
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858..."/>
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14z"/>
+    </symbol>
+  </svg>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script de alternância de tema -->
+  <script>
+    const themeToggleButtons = document.querySelectorAll('[data-bs-theme-value]');
+    themeToggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const theme = button.getAttribute('data-bs-theme-value');
+        document.documentElement.setAttribute('data-bs-theme', theme);
+        themeToggleButtons.forEach(b => b.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
