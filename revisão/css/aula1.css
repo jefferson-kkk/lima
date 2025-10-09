@@ -1,0 +1,20 @@
+/* Formatação de paragrafo */
+p {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left:10px;
+    text-align: center;
+}
+
+h1,h2{
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
