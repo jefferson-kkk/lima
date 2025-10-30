@@ -1,12 +1,9 @@
 header {
-    background: linear-gradient(180deg, #3a0ca3 0%, #7209b7 50%, #560bad 100%);
+    background: linear-gradient(180deg, #0077ff 0%, #0059c9 50%, #003b91 100%);
     color: white;
     text-align: center;
     padding: 30px 10px;
 }
-
-
-
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -16,9 +13,10 @@ h1 {
 
 header p {
     font-size: 14px;
-    color: #d9caff;
+    color: #cfe3ff;
     margin-bottom: 15px;
 }
+
 .menu {
     display: flex;
     justify-content: flex-start;
@@ -44,7 +42,7 @@ button:hover {
 main {
     max-width: 900px;
     margin: 30px auto;
-    background-color: #f4f7ff;
+    background-color: #f4f9ff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -52,35 +50,23 @@ main {
 
 h3 {
     font-family: 'Courier New', Courier, monospace;
-    color: #3a0ca3;
-    background: linear-gradient(to right, #b3baf7, #ffffff);
+    color: #0044cc;
+    background: linear-gradient(to right, #cde5ff, #ffffff);
     padding: 8px 10px;
     border-radius: 3px;
     margin-top: 25px;
 }
 
-p.menu {
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.lista-dividida {
-    column-count: 2;
-    column-gap: 40px;
-    padding-left: 20px;
-}
-
 li {
     list-style-type: "✓ ";
-    color: blueviolet;
+    color: #0055ff;
     font-weight: bold;
     padding-left: 5px;
 }
 
 .video {
     height: 500px;
-    background-color: #b12ce6;
+    background-color: #0077ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,9 +81,9 @@ li {
 
 footer {
     height: 35px;
-    background-color: blueviolet;
+    background-color: #0044cc;
     color: white;
     text-align: center;
     line-height: 35px;
     margin-top: 30px;
-} 
+}
